@@ -1,4 +1,6 @@
 ---
+import GitHub from "./icons/GitHub.astro"
+
 const currentYear = new Date().getFullYear()
 ---
 
@@ -8,22 +10,10 @@ const currentYear = new Date().getFullYear()
   <div
     class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"
   >
-    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90"
-      >&copy; {currentYear}
-      <a href="https://midu.dev/" class="hover:underline">midudev</a>. Casi
-      todos los derechos reservados
+    <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90 flex items-center gap-x-2">
+      <GitHub class="size-4" />
+      Repository created by
+      <a href="https://github.com/midudev/porfolio.dev.git" target="_blank" rel="noopener" class="hover:underline text-yellow-100">midudev</a>.
     </span>
-    <ul
-      class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0"
-    >
-      <li>
-        <a href="/#sobre-mi" class="hover:underline me-4 md:me-6">Sobre mí</a>
-      </li>
-      <li>
-        <a id="contacto" href="mailto:miduga@gmail.com" class="hover:underline"
-          >Contacto</a
-        >
-      </li>
-    </ul>
   </div>
 </footer>
